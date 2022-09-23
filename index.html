@@ -9,9 +9,64 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <main id="displayContainer">
+  <!-- <main id="displayContainer">
     <h1 id="taskDisplay"></h1>
-  </main>
+  </main> -->
+  <div id="taskManager">
+    <form action="" method="post" id="formAddTask">
+      <div id="formContainer">
+        <div>
+          <label for="iptName">Nome da tarefa:</label>
+          <input type="text" name="" id="iptName">
+        </div>
+        <div>
+          <label for="iptNumRecurrence">Recorrência:</label>
+          <input type="text" name="" id="iptNumRecurrence" disabled>
+          <select name="" id="slctUnitRecurrence">
+            <option value="none">Sem recorrência</option>
+            <option value="minutes">Minutos</option>
+            <option value="hours">Horas</option>
+            <option value="days">Dias</option>
+            <option value="weeks">Semanas</option>
+            <option value="months">Meses</option>
+            <option value="years">Anos</option>
+          </select>
+        </div>
+        <div>
+          <label for="iptMinDateHour">Hora e Data mínimas:</label>
+          <input type="datetime-local" name="" id="iptMinDateHour">
+        </div>
+        <div>
+          <span>
+            <label for="iptCheckAlarm">Alarme:</label>
+            <input type="checkbox" name="" id="iptCheckAlarm">
+          </span>
+          <input type="datetime-local" name="" id="iptDateHourAlarm" disabled>
+        </div>
+        <div>
+          <label for="iptTags">Tags:</label>
+          <input type="text" name="" id="iptTags">
+        </div>
+        <div>
+          <label for="">Prioridade:</label>
+          <select name="" id="slctPriority">
+            <option value="1">1 - Desprezável</option>
+            <option value="2">2 - Pouco importante</option>
+            <option value="3" selected>3 - Normal</option>
+            <option value="4">4 - Importante</option>
+            <option value="5">5 - Muito Importante</option>
+          </select>
+        </div>
+        <div id="btnAddTaskContainer">
+          <button id="btnAddTask">Adicionar Tarefa</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="taskList">
+
+    </div>
+  </div>
 
   <script src="./js/main.js"></script>
 </body>

@@ -1,3 +1,3 @@
-const taskDisplay = document.getElementById('taskDisplay');
+// const taskDisplay = document.getElementById('taskDisplay');
 
-taskDisplay.innerHTML = 'Nenhuma tarefa disponível';
+// taskDisplay.innerHTML = 'Nenhuma tarefa disponível';
